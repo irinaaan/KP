@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.MainController">
+   <left>
+      <VBox fx:id="sideMenu" prefHeight="547.0" prefWidth="133.0" style="-fx-background-color: #F08080;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonOrders" mnemonicParsing="false" onMouseClicked="#sales" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: transparent;" text="orders" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonProducts" layoutX="10.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#products" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: transparent;" text="products" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonClients" layoutX="10.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#clients" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: transparent;" text="clients" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonStatistics" layoutX="10.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#reports" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: transparent;" text="statistics" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonEmployee" layoutX="10.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#other" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: transparent;" text="employee" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonExit" mnemonicParsing="false" onMouseClicked="#other" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: transparent;" text="exit" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="441.0" prefWidth="533.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="234.0" layoutY="219.0" text="welcome" textFill="LIGHTCORAL">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

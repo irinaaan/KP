@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="sp" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.StatisticsController">
+  <content>
+    <AnchorPane fx:id="ap" minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="418.0">
+         <children>
+            <BarChart fx:id="barChartOrder" layoutX="8.0" layoutY="181.0" prefHeight="243.0" prefWidth="551.0">
+              <xAxis>
+                <CategoryAxis fx:id="categoryAxisOrder" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="numberAxisOrder" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Text layoutX="214.0" layoutY="896.0" strokeType="OUTSIDE" strokeWidth="0.0" text="profit for each month">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="213.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="top selling products">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <BarChart fx:id="barChartTopSelling" layoutX="8.0" layoutY="545.0" prefHeight="243.0" prefWidth="551.0">
+              <xAxis>
+                <CategoryAxis fx:id="categoryAxisTopSelling" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="numberAxisTopSelling" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <BarChart fx:id="barChartProfit" layoutX="14.0" layoutY="902.0" prefHeight="243.0" prefWidth="551.0">
+               <xAxis>
+                  <CategoryAxis fx:id="categoryAxisProfit" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="numberAxisProfit" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Text layoutX="182.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="number of orders per month">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="choiceBox" layoutX="365.0" layoutY="52.0" prefWidth="150.0" />
+            <Label layoutX="49.0" layoutY="52.0" text="select a year to display data in graphs">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

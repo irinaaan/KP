@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="ap" maxHeight="Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.AddingProductController">
+    <children>
+        <Label fx:id="labelAddingAProduct" layoutX="68.0" layoutY="33.0" prefHeight="28.0" prefWidth="199.0" text="ADDING A PRODUCT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttonAdd" layoutX="67.0" layoutY="431.0" mnemonicParsing="false" onAction="#onAddButtonClicked" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="ADD" />
+        <Text fx:id="textProductName" layoutX="67.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product name" />
+        <TextField fx:id="fieldDescription" layoutX="67.0" layoutY="164.0" prefHeight="28.0" prefWidth="239.0" />
+        <TextField fx:id="fieldProductName" layoutX="67.0" layoutY="109.0" prefHeight="28.0" prefWidth="239.0" />
+        <Text fx:id="textDescription" layoutX="67.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+        <Text fx:id="textUnitOfMeasurement" layoutX="67.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit of measurement" />
+        <Text fx:id="textPrice" layoutX="67.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+        <Button fx:id="buttonCancel" layoutX="221.0" layoutY="431.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="CANCEL" />
+        <TextField fx:id="fieldUnitOfMeasurement" layoutX="67.0" layoutY="219.0" prefHeight="28.0" prefWidth="239.0" />
+        <TextField fx:id="fieldPrice" layoutX="67.0" layoutY="274.0" prefHeight="28.0" prefWidth="239.0" />
+        <Label fx:id="labelError" layoutX="100.0" layoutY="227.0" prefHeight="28.0" prefWidth="239.0" />
+    </children>
+</AnchorPane>

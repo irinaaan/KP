@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:id="ap" maxHeight="Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.AddingOrderController">
+<children>
+    <Label fx:id="labelAddingAOrder" layoutX="68.0" layoutY="33.0" prefHeight="28.0" prefWidth="199.0" text="ADDING AN ORDER">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Button fx:id="buttonAdd" layoutX="70.0" layoutY="445.0" mnemonicParsing="false" onAction="#onAddButtonClicked" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="ADD" />
+    <Text fx:id="textClientID" layoutX="67.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client ID" />
+    <TextField fx:id="fieldProductID" layoutX="67.0" layoutY="151.0" prefHeight="28.0" prefWidth="239.0" />
+    <TextField fx:id="fieldClientID" layoutX="67.0" layoutY="97.0" prefHeight="28.0" prefWidth="239.0" />
+    <Text fx:id="textProductID" layoutX="67.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" />
+    <Text fx:id="textDate" layoutX="67.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+    <Text fx:id="textStatus" layoutX="67.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+    <Text fx:id="textQuantity" layoutX="67.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+    <Button fx:id="buttonCancel" layoutX="225.0" layoutY="445.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="CANCEL" />
+    <TextField fx:id="fieldQuantity" layoutX="67.0" layoutY="322.0" prefHeight="28.0" prefWidth="239.0" />
+    <DatePicker fx:id="datePicker" layoutX="67.0" layoutY="208.0" prefHeight="28.0" prefWidth="239.0" />
+    <Label fx:id="labelError" layoutX="130.0" layoutY="400.0" prefHeight="28.0" prefWidth="239.0" />
+    <ComboBox fx:id="comboBoxStatus" layoutX="67.0" layoutY="265.0" prefHeight="28.0" prefWidth="239.0" />
+    <Text fx:id="textSum" layoutX="67.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+</children>
+</AnchorPane>

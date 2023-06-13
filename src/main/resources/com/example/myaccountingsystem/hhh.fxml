@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.EmployeeController">
+    <center>
+        <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <VBox fx:id="employeeContainer" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <AnchorPane prefHeight="57.0" prefWidth="582.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="466.0" layoutY="16.0" mnemonicParsing="false" onAction="#addEmployee" text="Add employee" />
+            <TextField fx:id="textFieldName" layoutX="60.0" layoutY="16.0" prefHeight="25.0" prefWidth="143.0" />
+            <TextField fx:id="textfieldJobTitle" layoutX="278.0" layoutY="16.0" prefHeight="25.0" prefWidth="143.0" />
+            <Label layoutX="20.0" layoutY="20.0" text="Name:" />
+            <Label layoutX="226.0" layoutY="20.0" text="Job title:" />
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

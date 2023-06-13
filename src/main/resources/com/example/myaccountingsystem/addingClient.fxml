@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="ap" maxHeight="Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.AddingClientController">
+    <children>
+        <Label fx:id="labelAddingAClient" layoutX="68.0" layoutY="33.0" prefHeight="28.0" prefWidth="199.0" text="ADDING A CLIENT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fieldFullname" layoutX="67.0" layoutY="93.0" prefHeight="28.0" prefWidth="239.0" />
+        <Button fx:id="buttonAdd" layoutX="67.0" layoutY="431.0" mnemonicParsing="false" onAction="#onAddButtonClicked" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="ADD" />
+        <Text fx:id="textFullName" layoutX="67.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name" />
+        <TextField fx:id="fieldTelephoneNumber" layoutX="67.0" layoutY="148.0" prefHeight="28.0" prefWidth="239.0" />
+        <Text fx:id="textTelephoneNumber" layoutX="67.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone number" />
+        <Text fx:id="textEmail" layoutX="67.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+        <Text fx:id="textCountry" layoutX="67.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+        <Button fx:id="buttonCancel" layoutX="221.0" layoutY="431.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="CANCEL" />
+      <TextField fx:id="fieldEmail" layoutX="67.0" layoutY="203.0" prefHeight="28.0" prefWidth="239.0" />
+        <Label fx:id="labelError" layoutX="130.0" layoutY="405.0" prefHeight="28.0" prefWidth="239.0" />
+      <Text fx:id="textCity" layoutX="67.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
+      <ComboBox fx:id="comboBoxCountry" layoutX="67.0" layoutY="258.0" prefHeight="28.0" prefWidth="239.0" />
+      <ComboBox fx:id="comboBoxCity" layoutX="67.0" layoutY="312.0" prefHeight="28.0" prefWidth="239.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.LogInController">
+    <children>
+        <Label fx:id="labelLogin" layoutX="57.0" layoutY="40.0" prefHeight="28.0" prefWidth="199.0" text="LOGIN">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fieldLogin" layoutX="57.0" layoutY="112.0" prefHeight="28.0" prefWidth="239.0" />
+        <Button fx:id="buttonLogin" layoutX="57.0" layoutY="249.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="239.0" style="-fx-background-color: #F08080;" text="LOGIN" />
+        <PasswordField fx:id="fieldPassword" layoutX="57.0" layoutY="174.0" prefHeight="28.0" prefWidth="239.0" />
+        <Button fx:id="buttonSignUp" layoutX="202.0" layoutY="346.0" mnemonicParsing="false" style="-fx-background-color: #F08080;" text="SIGN UP" />
+      <Text fx:id="textLogin" layoutX="57.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+      <Text fx:id="textPassword" layoutX="57.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text fx:id="textNeedAnAccount" layoutX="95.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need an account?" />
+        <Label fx:id="labelError" layoutX="95.0" layoutY="220.0" prefHeight="28.0" prefWidth="239.0" />
+    </children>
+</AnchorPane>

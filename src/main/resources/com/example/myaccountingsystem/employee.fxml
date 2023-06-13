@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.EmployeeController">
+    <center>
+        <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <VBox fx:id="employeeContainer" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <AnchorPane prefHeight="107.0" prefWidth="582.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="484.0" layoutY="16.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="25.0" prefWidth="59.0" text="Add" />
+                <TextField fx:id="textFieldName" layoutX="78.0" layoutY="16.0" prefHeight="25.0" prefWidth="143.0" />
+                <TextField fx:id="textFieldJobTitle" layoutX="296.0" layoutY="16.0" prefHeight="25.0" prefWidth="143.0" />
+                <Label layoutX="244.0" layoutY="20.0" text="Job title:" />
+                <Label layoutX="38.0" layoutY="20.0" text="Name:" />
+            <Button layoutX="484.0" layoutY="54.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="25.0" prefWidth="62.0" text="Delete" />
+            <Label layoutX="260.0" layoutY="58.0" text="Email:" />
+            <TextField fx:id="textFieldEmail" layoutX="296.0" layoutY="54.0" prefHeight="25.0" prefWidth="143.0" />
+            <Label layoutX="3.0" layoutY="45.0" prefHeight="44.0" prefWidth="75.0" text="Date of Birth:" />
+            <TextField fx:id="textFieldDate" layoutX="78.0" layoutY="54.0" prefHeight="25.0" prefWidth="143.0" />
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.ClientsController">
+    <center>
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="columnIdClients" prefWidth="26.0" text="#" />
+                <TableColumn fx:id="columnClientname" prefWidth="127.0" text="Client name" />
+                <TableColumn fx:id="columnTelephoneNumber" prefWidth="111.0" text="Telephone number" />
+                <TableColumn fx:id="columnEmail" prefWidth="128.0" text="Email" />
+                <TableColumn fx:id="columnCountry" prefWidth="117.0" text="Country" />
+                <TableColumn fx:id="columnCity" prefWidth="75.0" text="City" />
+            </columns>
+        </TableView>
+    </center>
+    <top>
+        <AnchorPane fx:id="ap" prefHeight="60.0" prefWidth="574.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonAdd" layoutX="391.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="add" />
+                <Button fx:id="buttonDelete" layoutX="483.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="delete" />
+                <Button fx:id="buttonSortByAddress" layoutX="11.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #F08080;" text="sort by address" />
+                <Button fx:id="buttonSortByName" layoutX="114.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="sort by name" />
+            </children></AnchorPane>
+    </top>
+</BorderPane>

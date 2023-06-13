@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="ap" maxHeight="Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="304.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.DeletingOrderController">
+    <children>
+        <Label fx:id="labelDeletingASale" layoutX="33.0" layoutY="33.0" prefHeight="28.0" prefWidth="199.0" text="DELETING AN ORDER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fieldOrderID" layoutX="33.0" layoutY="93.0" prefHeight="28.0" prefWidth="239.0" />
+        <Text fx:id="textSaleID" layoutX="33.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID" />
+        <Button fx:id="buttonCancel" layoutX="187.0" layoutY="171.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="CANCEL" />
+        <Button fx:id="buttonDelete" layoutX="33.0" layoutY="171.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #F08080;" text="DELETE" />
+        <Label fx:id="labelError" layoutX="100.0" layoutY="227.0" prefHeight="28.0" prefWidth="239.0" />
+    </children>
+</AnchorPane>

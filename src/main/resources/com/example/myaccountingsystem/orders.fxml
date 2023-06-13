@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myaccountingsystem.OrdersController">
+    <top>
+        <AnchorPane fx:id="ap" prefHeight="60.0" prefWidth="574.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonAdd" layoutX="391.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="add" />
+                <Button fx:id="buttonSortBySum" layoutX="11.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="sort by sum" />
+                <Button fx:id="buttonSortByDate" layoutX="103.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="sort by date" />
+                <Button fx:id="buttonDelete" layoutX="483.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #F08080;" text="delete" />
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <TableView fx:id="tableView" prefHeight="424.0" prefWidth="599.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="columnIdOrders" prefWidth="28.0" text="#" />
+                <TableColumn fx:id="columnIdCLient" prefWidth="79.0" text="Client code" />
+                <TableColumn fx:id="columnIdProducts" minWidth="0.0" prefWidth="84.0" text="Product code" />
+                <TableColumn fx:id="columnDate" prefWidth="99.0" text="Date" />
+            <TableColumn fx:id="columnStatus" prefWidth="121.0" text="Status" />
+                <TableColumn fx:id="columnQuantity" prefWidth="56.0" text="Quantity" />
+                <TableColumn fx:id="columnSum" prefWidth="117.0" text="Sum" />
+            </columns>
+        </TableView>
+    </left>
+</BorderPane>
